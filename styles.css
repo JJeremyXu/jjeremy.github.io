@@ -22,14 +22,15 @@ body, html {
     background-position: center;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     flex-direction: column;
     color: #ffffff; /* 文本颜色 */
     text-align: center;
   }
   
   .container {
+    margin-top: 10%;
     text-align: center;
     color: white;
   }
