@@ -31,9 +31,15 @@ body, html {
   
   .container {
     margin-top: 10%;
+    margin-left: 38px;
     text-align: center;
     color: white;
   }
+
+  .logo{
+    width: 400px;
+  }
+
   /* 可以添加其他样式来美化页面，比如字体、按钮等等 */
   h1 {
     font-family: FuturaBQ-Medium, sans-serif;
