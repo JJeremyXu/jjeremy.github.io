@@ -1,8 +1,10 @@
 @font-face {
   font-family: 'FuturaBQ-Medium'; /* 自定义字体名称 */
   src: url('./static/fonts/FuturaBQ-Medium.otf') format('opentype'); /* 字体文件路径和格式 */
-  /* 可以添加其他字体属性，比如 font-weight 和 font-style */
 }
+
+
+
 @font-face {
   font-family: 'GillSansMTPro-Light'; /* 自定义字体名称 */
   src: url('./static/fonts/GillSansMTPro-Light.otf') format('opentype'); /* 字体文件路径和格式 */
@@ -10,13 +12,14 @@
 }
 
 
+
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  
-  .coming-soon {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.page {
     background-image: url("/static/images/place_de_vendome.jpg");
     background-size: cover;
     background-position: center;
@@ -30,26 +33,62 @@ body, html {
   }
   
   .container {
-    margin-top: 10%;
-    margin-left: 38px;
-    text-align: center;
-    color: white;
+    /* margin-top: 10%; */
+    /* text-align: center; */
   }
-
+  
+  
   .logo{
-    width: 400px;
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 160px;
+    height: auto;
   }
+  
+  .coming-soon {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
+    font-family: FuturaBQ-Medium, sans-serif;
+    font-size: 52px;
+    margin-bottom: 20px;
+  }
+  
   /* 可以添加其他样式来美化页面，比如字体、按钮等等 */
   h1 {
     font-family: FuturaBQ-Medium, sans-serif;
+    font-weight: lighter;
     margin-top: 80px;
     font-size: 52px;
     margin-bottom: 20px;
 }
 
 p {
-    font-family: GillSansMTPro-Light, sans-serif;
-    font-size: 24px;
+  font-family: GillSansMTPro-Light, sans-serif;
+  font-size: 24px;
+}
+@media (max-width: 1250px) {
+  .coming-soon {
+    font-size: 42px;
+  }
+  h1 {
+    font-size: 42px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-top: 15%;
+    max-width: 140px; /* 设置logo在小屏幕上的最大宽度 */
+    min-width: 100px; /* 设置logo在小屏幕上的最小宽度 */
+  }
 }
   
