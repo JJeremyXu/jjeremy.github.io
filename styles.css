@@ -3,6 +3,12 @@
   src: url('./static/fonts/FuturaBQ-Medium.otf') format('opentype'); /* 字体文件路径和格式 */
 }
 
+@font-face {
+  font-family: 'FuturaBQ-Light'; /* 自定义字体名称 */
+  src: url('./static//fonts/FuturaBQ-Light.otf') format('opentype'); /* 字体文件路径和格式 */
+}
+
+
 
 
 @font-face {
@@ -54,7 +60,7 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    font-family: FuturaBQ-Medium, sans-serif;
+    font-family: FuturaBQ-Light, sans-serif;
     font-size: 52px;
     margin-bottom: 20px;
   }
@@ -73,8 +79,9 @@ p {
   font-size: 24px;
 }
 @media (max-width: 1250px) {
+  /* coming-soon 不要换行 */
   .coming-soon {
-    font-size: 42px;
+    white-space: nowrap;
   }
   h1 {
     font-size: 42px;
@@ -85,6 +92,9 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .coming-soon {
+    font-size: 28px;
+  }
   .logo {
     margin-top: 15%;
     max-width: 140px; /* 设置logo在小屏幕上的最大宽度 */
